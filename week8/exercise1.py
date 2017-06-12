@@ -67,8 +67,7 @@ def put_behind_bars(input_string="very naughty boy"):
     e.g. "very naughty boy" should return "|v|e|r|y| |n|a|u|g|h|t|y| |b|o|y|"
     TIP: make sure that you have a pipe on both ends of the string.
     """
-    pipe_str = '|'.join(input_string)
-    pipe = ('|' + pipe_str + '|')
+    pipe = '|' + '|'.join(input_string) + '|'
     return pipe
 
 
